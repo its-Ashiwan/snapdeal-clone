@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+  overflow-x: hidden;
+}
+
+/* styles.css */
+
+
+
+/* above is navbar css */
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #fff;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.cart-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 30px;
+  animation: slideDown 1s ease forwards;
+}
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin-bottom: 40px;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: slideUp 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.category-item {
+  color: #555;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  color: #e60023;
+  transform: translateY(-5px);
+}
+
+.shop-now-btn {
+  background-color: #e60023;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.4s ease, transform 0.3s ease;
+  animation: fadeIn 1.5s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.shop-now-btn:hover {
+  background-color: #c4001f;
+  transform: scale(1.05);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #777;
+  flex-wrap: wrap;
+  gap: 10px;
+  animation: fadeIn 2s ease forwards;
+  animation-delay: 1.8s;
+}
+
+.footer span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll Animation */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-out;
+}
+
+.scroll-animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .categories {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  .cart-container h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+  .shop-now-btn {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+}

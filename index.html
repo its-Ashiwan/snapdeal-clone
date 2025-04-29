@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snapdeal </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<div id="top-strip">
+  <div class="left-text">Brand Waali Quality, Bazaar Waali Deal!</div>
+  <div class="right-links">
+    <a href="#">Our Blog</a>
+    <a href="#">Help Center</a>
+    <a href="#">Sell On Snapdeal</a>
+    <a href="#"><i class="fas fa-mobile-alt"></i> Download App</a>
+  </div>
+</div>
+
+<header class="sticky-top shadow-sm">
+  <div class="py-2 px-3 bg-danger d-flex justify-content-between align-items-center">
+    
+    <!-- Logo -->
+    <div class="d-flex align-items-center">
+      <a href="index.html"><img src="snapdeal.png" alt="Snapdeal Logo" height="40" class="me-2"></a>
+    </div>
+
+    <!-- Search bar -->
+    <div class="flex-grow-1 mx-3">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search products & brands">
+        <button class="btn btn-dark" type="button">
+          <i class="fas fa-search me-1"></i> Search
+        </button>
+      </div>
+    </div>
+
+    <!-- Cart and Sign in -->
+    <div class="d-flex align-items-center gap-4">
+      <div class="text-white d-flex align-items-center gap-1 hover-underline">
+        <i class="fas fa-shopping-cart"></i> <a href="cart.html">Cart</a>
+      </div>
+      <div class="text-white d-flex align-items-center gap-1 hover-underline">
+        <i class="fas fa-user-circle"></i> <a href="login.html">Sign In</a>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<div class="container my-5">
+  <div class="row g-4 align-items-start">
+
+    <!-- Left Sidebar: Categories -->
+    <div class="col-lg-2 col-md-12" data-aos="fade-right">
+      <div class="bg-white shadow rounded p-3">
+        <h6 class="fw-bold mb-3">TOP CATEGORIES</h6>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item d-flex align-items-center gap-2">
+            <img src="men.jpeg" alt="Men" class="category-icon"> Men's Fashion
+          </a>
+          <a href="#" class="list-group-item d-flex align-items-center gap-2">
+            <img src="women.jpeg" alt="Women" class="category-icon"> Women's Fashion
+          </a>
+          <a href="#" class="list-group-item d-flex align-items-center gap-2">
+            <img src="home.jpeg"alt="Home" class="category-icon"> Home & Kitchen
+          </a>
+          <a href="#" class="list-group-item d-flex align-items-center gap-2">
+            <img src="kids.jpeg" alt="Kids" class="category-icon"> Toys, Kids' Fashion</a>
+          <a href="#" class="list-group-item d-flex align-items-center gap-2">
+            <img src="beauty.jpeg" alt="Beauty" class="category-icon"> Beauty, Health
+          </a>
+        </div>
+        <hr>
+        <h6 class="fw-bold">MORE CATEGORIES</h6>
+        <ul class="list-unstyled small">
+          <li>Automotives</li>
+          <li>Mobile & Accessories</li>
+          <li>Electronics</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Center: Carousel -->
+    <div class="col-lg-8 col-md-12" data-aos="zoom-in">
+      <div id="offerCarousel" class="carousel slide shadow rounded" data-bs-ride="carousel">
+        <div class="carousel-inner rounded">
+          <div class="carousel-item active">
+            <img src="bed3.jpg" class="d-block w-100" alt="Bed Sheets">
+            <div class="carousel-caption d-none d-md-block text-start">
+              <h2 class="fw-bold">Bed Sheets</h2>
+              <p>UPTO 80% OFF</p>
+              <a href="#" class="btn btn-light btn-sm fw-bold">
+                <i class="fas fa-shopping-cart"></i> BUY NOW
+              </a>
+              <div class="d-flex gap-3 mt-3">
+                <small><i class="fas fa-tshirt"></i> SOFT FABRIC</small>
+                <small><i class="fas fa-border-all"></i> WIDE RANGE</small>
+                <small><i class="fas fa-tint"></i> EASY TO WASH</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#offerCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle p-2"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#offerCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle p-2"></span>
+        </button>
+      </div>
+
+      <!-- Links under carousel -->
+      <div class="d-flex justify-content-around mt-3 text-primary fw-bold small">
+        <a href="#">BOB CARD</a>
+        <a href="#">India @100</a>
+        <a href="#">Sports Footwear</a>
+        <a href="#">ETHNIC WEAR</a>
+        <a href="#">KITCHENWARE</a>
+      </div>
+    </div>
+
+    <!-- Right Sidebar: Pincode -->
+    <div class="col-lg-2 col-md-12" data-aos="fade-left">
+      <div class="bg-white shadow rounded p-4 text-center">
+        <img src="location.png" alt="Delivery" height="80">
+        <h6 class="mt-3 fw-bold">Your Delivery Pincode</h6>
+        <p class="small text-muted">Enter your pincode to check availability and faster delivery options</p>
+        <input type="text" class="form-control mb-2" placeholder="Enter pincode">
+        <div class="d-flex justify-content-center gap-2">
+          <button class="btn btn-dark btn-sm">SUBMIT</button>
+          <button class="btn btn-outline-secondary btn-sm" disabled>NEXT</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Trending Products Section -->
+<section class="container my-5" data-aos="fade-up">
+  <h3 class="fw-bold mb-4">TRENDING PRODUCTS</h3>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-4">
+
+    <!-- Product Card 1 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm product-card">
+        <img src="rudaraksh.png" class="card-img-top" alt="Product 1">
+        <div class="card-body">
+          <h6 class="card-title small">Shiv Trishul Damru Gold-plated Locket with Rudraksha Mala</h6>
+          <div class="stars text-warning small mb-2">
+            ★★★★☆
+          </div>
+          <div class="price">
+            <small class="text-decoration-line-through text-muted">Rs 499</small>
+            <span class="fw-bold text-dark"> Rs 135</span>
+          </div>
+          <span class="badge bg-success mt-2">73% OFF</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm product-card">
+        <img src="watch1.png" class="card-img-top" alt="Product 2">
+        <div class="card-body">
+          <h6 class="card-title small">MARKRIN Gold Stainless Steel Analog Men's Watch</h6>
+          <div class="stars text-warning small mb-2">
+            ★★★★★
+          </div>
+          <div class="price">
+            <small class="text-decoration-line-through text-muted">Rs 1499</small>
+            <span class="fw-bold text-dark"> Rs 463</span>
+          </div>
+          <span class="badge bg-success mt-2">69% OFF</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm product-card">
+        <img src="watch2.png" class="card-img-top" alt="Product 3">
+        <div class="card-body">
+          <h6 class="card-title small">LimeStone Multicolor Metal Analog Men's Watch</h6>
+          <div class="stars text-warning small mb-2">
+            ★★★★☆
+          </div>
+          <div class="price">
+            <small class="text-decoration-line-through text-muted">Rs 999</small>
+            <span class="fw-bold text-dark"> Rs 488</span>
+          </div>
+          <span class="badge bg-success mt-2">51% OFF</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm product-card">
+        <img src="women2.png" class="card-img-top" alt="Product 4">
+        <div class="card-body">
+          <h6 class="card-title small">ALL WAYS YOU - Multicolor Polyester Women's Camisole</h6>
+          <div class="stars text-warning small mb-2">
+            ★★★★☆
+          </div>
+          <div class="price">
+            <small class="text-decoration-line-through text-muted">Rs 1130</small>
+            <span class="fw-bold text-dark"> Rs 179</span>
+          </div>
+          <span class="badge bg-success mt-2">84% OFF</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm product-card">
+        <img src="bag.png" class="card-img-top" alt="Product 5">
+        <div class="card-body">
+          <h6 class="card-title small">Dura Mater Ethnic Handbag</h6>
+          <div class="stars text-warning small mb-2">
+            ★★★★☆
+          </div>
+          <div class="price">
+            <small class="text-decoration-line-through text-muted">Rs 999</small>
+            <span class="fw-bold text-dark"> Rs 379</span>
+          </div>
+          <span class="badge bg-success mt-2">62% OFF</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div>
+  <img src="ss.png" height="100%" width="100%">
+</div>
+
+<!-- Footer Top Features -->
+<section class="container my-5" data-aos="fade-up">
+  <div class="row text-center g-4">
+
+    <div class="col-12 col-md-3">
+      <img src="secure payment.png" alt="Secure Payments" width="60" class="mb-3">
+      <h6 class="fw-bold">100% SECURE PAYMENTS</h6>
+      <p class="small text-muted">Moving your card details to a much more secured place</p>
+    </div>
+
+    <div class="col-12 col-md-3">
+      <img src="trustpay.png" alt="Trustpay" width="60" class="mb-3">
+      <h6 class="fw-bold">TRUSTPAY</h6>
+      <p class="small text-muted">100% Payment Protection. Easy Return Policy</p>
+    </div>
+
+    <div class="col-12 col-md-3">
+      <img src="help center.png" alt="Help Center" width="60" class="mb-3">
+      <h6 class="fw-bold">HELP CENTER</h6>
+      <p class="small text-muted">Got a question? Look no further. Browse our FAQs or submit your query here.</p>
+    </div>
+
+    <div class="col-12 col-md-3">
+      <img src="shop.png" alt="Shop on the Go" width="60" class="mb-3">
+      <h6 class="fw-bold">SHOP ON THE GO</h6>
+      <p class="small text-muted">Download the app and get exciting app only offers at your fingertips</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer Bottom Links -->
+<footer class="bg-light pt-5 pb-3" data-aos="fade-up" data-aos-delay="300">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold mb-3">POLICY INFO</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Sale</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Report Abuse & Takedown Policy</a></li>
+          <li><a href="#">Know Your BIS Standard</a></li>
+          <li><a href="#">Products Under BIS</a></li>
+          <li><a href="#">Certification</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold mb-3">COMPANY</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold mb-3">SNAPDEAL BUSINESS</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#">Shopping App</a></li>
+          <li><a href="#">Sell on Snapdeal</a></li>
+          <li><a href="#">Media Enquiries</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2">
+        <h6 class="fw-bold mb-3">POPULAR LINKS</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#">Lehenga</a></li>
+          <li><a href="#">Kid's Clothing</a></li>
+          <li><a href="#">Sarees</a></li>
+          <li><a href="#">Winter Wear</a></li>
+          <li><a href="#">Sweatshirts</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <h6 class="fw-bold mb-3">SUBSCRIBE</h6>
+        <form class="d-flex">
+          <input type="email" class="form-control rounded-0" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-dark rounded-0">SUBSCRIBE</button>
+        </form>
+        <p class="small text-muted mt-2">Register now to get updates on promotions and coupons. <a href="#">Or Download App</a></p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+  });
+</script>
+
+<section class="payment-connect-section py-5" data-aos="fade-up">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+
+      <!-- Payment Options -->
+      <div class="col-12 col-md-6 mb-4">
+        <h6 class="fw-bold mb-4">PAYMENT</h6>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <img src="ss1.png" alt="Payment Option" class="payment-icon">
+          <img src="ss3.png" alt="Payment Option" class="payment-icon">
+          <img src="ss4.png" alt="Payment Option" class="payment-icon">
+          <img src="ss5.png" alt="Payment Option" class="payment-icon">
+          <img src="ss6.png" alt="Cash on Delivery" class="payment-icon">
+          <img src="ss7.png" alt="Net Banking" class="payment-icon">
+        </div>
+      </div>
+
+      <!-- Connect Options -->
+      <div class="col-12 col-md-6">
+        <h6 class="fw-bold mb-4">CONNECT</h6>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="categories-about-section py-5" data-aos="fade-up">
+  <div class="container">
+
+    <!-- Categories -->
+    <div class="categories mb-5">
+      <div class="row gy-4">
+
+        <div class="col-md-6 col-lg-4">
+          <h6><strong>Men:</strong></h6>
+          <p class="links">
+            Shirts for Men / Casual Shirts / Formal Shirts / Hoodies / Cotton Shirts / T-Shirts / Polo T-shirts / Kurta Pajama / White Shirt / Black Shirt / Lower for Men / Trousers / Jackets / Formal Pants / Jeans / Sweaters
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h6><strong>Women:</strong></h6>
+          <p class="links">
+            Tops / Kurtis / Sarees / Dresses / Jumpsuits / Jeans for Women / Salwar Suit / Bra / Nightwear / Sweatshirts / Shorts / Dupatta / Skirts
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h6><strong>Footwear:</strong></h6>
+          <p class="links">
+            Casual Shoes / Loafers / Slippers / Boots / Sandals / Heels for Women / Sports Shoes
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h6><strong>Home & Kitchen:</strong></h6>
+          <p class="links">
+            Wall Paintings / Stickers / Clocks / Lamps / Ceiling Lights / Hanging Lights / LED Bulbs / Vases
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h6><strong>Watch:</strong></h6>
+          <p class="links">
+            Watches for Men / Watches for Women / Smart Watches / Boys Watches / Girls Watches
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <h6><strong>Electronics:</strong></h6>
+          <p class="links">
+            Speakers / Headphones / Geysers / Trimmers / Hair Dryers / Water Purifiers / USB Cables / Keyboards
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- About Text -->
+    <div class="about-snapdeal">
+      <p class="about-text">
+        Snapdeal is India's leading pure-play value Ecommerce platform. Founded in 2010 by Kunal Bahl and Rohit Bansal, Snapdeal enables shoppers of Bharat to experience the joy of living their aspirations through reliable, value-for-money shopping. Snapdeal connects value-conscious buyers with quality products across categories, delivering to more than 96% of India's pin codes.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+  });
+</script>
+
+<!-- AOS Animation JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

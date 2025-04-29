@@ -1,0 +1,308 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Top Strip */
+#top-strip {
+  background-color: #d71149;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: all 0.4s ease;
+}
+
+/* Shrink effect */
+#top-strip.shrink {
+  padding: 4px 20px;
+  background-color: #b60e3d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Left side text */
+.left-text {
+  font-size: 14px;
+}
+
+/* Right side links */
+.right-links {
+  display: flex;
+  gap: 20px;
+}
+
+.right-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  transition: color 0.3s;
+}
+
+/* Animated underline */
+.right-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: #ffd1dc;
+  left: 0;
+  bottom: -2px;
+  transition: width 0.3s;
+}
+
+.right-links a:hover {
+  color: #ffd1dc;
+}
+
+.right-links a:hover::after {
+  width: 100%;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #top-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .right-links {
+    flex-wrap: wrap;
+    margin-top: 6px;
+    gap: 10px;
+  }
+}
+
+/* 2nd section */
+/* styles.css */
+
+/* Smooth transition */
+header {
+  transition: all 0.3s ease-in-out;
+  background-color: #e40046; /* Snapdeal Red */
+}
+
+/* When scrolling shrink the header */
+header.shrink {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+
+/* Hover underline effect for Cart and Sign In */
+.hover-underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Search input focus */
+input.form-control:focus {
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  border-color: #333;
+}
+
+/* Button hover */
+.btn-dark:hover {
+  background-color: #222;
+}
+/* Custom styles */
+
+.category-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+/* Under carousel links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons hover effect */
+.btn-dark:hover {
+  background-color: #333;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Product Card Hover */
+.product-card:hover {
+  transform: translateY(-6px);
+  transition: 0.4s ease;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+/* Stars style */
+.stars {
+  font-size: 14px;
+}
+
+/* Price and Discount Badge */
+.price {
+  font-size: 14px;
+}
+
+/* Fix Card Img */
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+/* Trending Section */
+#trendingCarousel {
+  padding-bottom: 20px;
+}
+
+#image
+{
+  height: 0;
+  width: 00;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #000;
+}
+
+footer h6 {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+footer .form-control {
+  border-radius: 0;
+}
+
+footer .btn-dark {
+  border-radius: 0;
+}
+
+/* Animate features icons slightly */
+footer img, section img {
+  transition: transform 0.4s ease;
+}
+
+footer img:hover, section img:hover {
+  transform: scale(1.1);
+}
+.payment-connect-section {
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
+
+.payment-icon {
+  width: 60px;
+  height: auto;
+  transition: transform 0.4s, box-shadow 0.4s;
+  border-radius: 8px;
+}
+
+.payment-icon:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #333;
+  transition: all 0.4s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+  background: #000;
+  color: #fff;
+  transform: translateY(-5px) scale(1.1);
+}
+.categories-about-section {
+  background: #f9f9f9;
+  border-top: 1px solid #e0e0e0;
+}
+
+.categories h6 {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.links {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.links a {
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #000;
+}
+
+.about-text {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.8;
+  animation: fadeInUp 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+/* Responsive Tuning */
+@media (max-width: 768px) {
+  .links {
+    font-size: 0.9rem;
+  }
+}

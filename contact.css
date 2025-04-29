@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  nav {
+    background: #e40046;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 0.8s ease-out;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    gap: 8px;
+  }
+  
+  .logo i {
+    font-size: 1.6rem;
+    animation: rotateIn 0.6s ease-out;
+  }
+  
+  @keyframes rotateIn {
+    from {
+      transform: rotate(-90deg);
+      opacity: 0;
+    }
+    to {
+      transform: rotate(0);
+      opacity: 1;
+    }
+  }
+  
+  .nav-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 1.3rem;
+  }
+  
+  .nav-icons i {
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .nav-icons i:hover {
+    transform: scale(1.2);
+    color: #ffd700;
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .nav-icons {
+      width: 100%;
+      justify-content: space-around;
+    }
+  }
+  
+
+#snapdeal-support {
+    font-family: 'Inter', sans-serif;
+    padding: 30px 15px;
+    background: #fff;
+    color: #333;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+  #snapdeal-support .support-wrapper {
+    text-align: center;
+  }
+  
+  #snapdeal-support h2 {
+    font-size: 1.6rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  #snapdeal-support .subtitle {
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  #snapdeal-support .cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #snapdeal-support .card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(40px);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+  
+  #snapdeal-support .card.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  #snapdeal-support .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  #snapdeal-support .card-icon {
+    font-size: 2.2rem;
+    padding: 12px;
+    border-radius: 50%;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+  
+  #snapdeal-support .card-icon.green {
+    background: #e6f4ea;
+    color: #1e8e3e;
+  }
+  
+  #snapdeal-support .card-icon.blue {
+    background: #e6f0fb;
+    color: #1a73e8;
+  }
+  
+  #snapdeal-support .btn {
+    padding: 10px 16px;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #snapdeal-support .btn.green {
+    background: #1e8e3e;
+  }
+  
+  #snapdeal-support .btn.green:hover {
+    background: #14702d;
+  }
+  
+  #snapdeal-support .btn.blue {
+    background: #1a73e8;
+  }
+  
+  #snapdeal-support .btn.blue:hover {
+    background: #0e59c9;
+  }
+  
+  #snapdeal-support .support-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+  
+  #snapdeal-support .support-footer .left {
+    color: #555;
+  }
+  
+  #snapdeal-support .support-footer .left a {
+    color: #0074cc;
+    text-decoration: none;
+  }
+  
+  #snapdeal-support .support-footer .right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  #snapdeal-support .support-footer .right a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 700px) {
+    #snapdeal-support .cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #snapdeal-support .support-footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+  
+    #snapdeal-support .support-footer .right a {
+      margin: 0 10px;
+    }
+  }
+  
